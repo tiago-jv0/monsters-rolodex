@@ -1,0 +1,28 @@
+.form {
+    position: relative;
+}
+
+.form__input {
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 15px auto;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form__label {
+    position: absolute;
+    font-size: 20px;
+    left: 39.8%;
+    top: 56%;
+    opacity: 1;
+    transition: all .4s;
+}
+
+.form__input:placeholder-shown + .form__label {
+    transform: translateY(-125%);
+    opacity: 0;
+}
