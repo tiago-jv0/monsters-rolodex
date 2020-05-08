@@ -6,11 +6,12 @@ const INITIAL_STATE = {
 
 const searchFieldReducer = (state = INITIAL_STATE, { type, payload }) => {
   switch (type) {
-    case SET_SEARCH_FIELD:
+    case SET_SEARCH_FIELD: {
       return {
         ...state,
         searchField: payload,
       };
+    }
     default:
       return state;
   }
